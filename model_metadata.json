@@ -1,0 +1,114 @@
+{
+  "model_name": "Extra Trees",
+  "features": [
+    "Nitrogen (%)",
+    "Phosphorus (%)",
+    "Potassium (%)",
+    "Calcium (%)",
+    "Magnesium (%)",
+    "Zinc (ppm)",
+    "Manganese (ppm)",
+    "Iron (ppm)",
+    "Copper (ppm)",
+    "Boron (ppm)",
+    "Chloride (%)",
+    "Sulfur (%)"
+  ],
+  "source_columns": [
+    "N(%)",
+    "P(%)",
+    "K(%)",
+    "Ca(%)",
+    "Mg(%)",
+    "Zn(ppm)",
+    "Mn(ppm)",
+    "Fe(ppm)",
+    "Cu(ppm)",
+    "B(ppm)",
+    "Cl(%)",
+    "S(ppm)"
+  ],
+  "defaults": {
+    "Nitrogen (%)": 2.4,
+    "Phosphorus (%)": 0.16,
+    "Potassium (%)": 0.98,
+    "Calcium (%)": 1.53,
+    "Magnesium (%)": 0.552,
+    "Zinc (ppm)": 33.0,
+    "Manganese (ppm)": 82.0,
+    "Iron (ppm)": 65.0,
+    "Copper (ppm)": 9.0,
+    "Boron (ppm)": 33.0,
+    "Chloride (%)": 0.329,
+    "Sulfur (%)": 0.348
+  },
+  "p10": {
+    "Nitrogen (%)": 2.0,
+    "Phosphorus (%)": 0.12,
+    "Potassium (%)": 0.5887,
+    "Calcium (%)": 1.0330000000000001,
+    "Magnesium (%)": 0.39,
+    "Zinc (ppm)": 20.0,
+    "Manganese (ppm)": 43.0,
+    "Iron (ppm)": 48.14,
+    "Copper (ppm)": 6.0,
+    "Boron (ppm)": 19.0,
+    "Chloride (%)": 0.114,
+    "Sulfur (%)": 0.25
+  },
+  "p90": {
+    "Nitrogen (%)": 2.9,
+    "Phosphorus (%)": 0.22,
+    "Potassium (%)": 1.44,
+    "Calcium (%)": 2.17,
+    "Magnesium (%)": 0.7967000000000003,
+    "Zinc (ppm)": 76.9,
+    "Manganese (ppm)": 199.0,
+    "Iron (ppm)": 98.0,
+    "Copper (ppm)": 11.0,
+    "Boron (ppm)": 64.25000000000009,
+    "Chloride (%)": 0.7932,
+    "Sulfur (%)": 0.46270000000000006
+  },
+  "missing_counts": {
+    "Nitrogen (%)": 13,
+    "Phosphorus (%)": 22,
+    "Potassium (%)": 16,
+    "Calcium (%)": 260,
+    "Magnesium (%)": 270,
+    "Zinc (ppm)": 293,
+    "Manganese (ppm)": 279,
+    "Iron (ppm)": 266,
+    "Copper (ppm)": 742,
+    "Boron (ppm)": 276,
+    "Chloride (%)": 2407,
+    "Sulfur (%)": 1240
+  },
+  "training_records": 3254,
+  "yield_median": 32.629312,
+  "yield_practical_max_95th_percentile": 176.98399999999995,
+  "test_metrics": {
+    "MAE": 32.405,
+    "RMSE": 45.031,
+    "R2": 0.5
+  },
+  "candidate_metrics": {
+    "Extra Trees": {
+      "MAE": 32.405,
+      "RMSE": 45.031,
+      "R2": 0.5
+    },
+    "Random Forest": {
+      "MAE": 32.553,
+      "RMSE": 45.114,
+      "R2": 0.498
+    }
+  },
+  "notes": [
+    "Year was excluded.",
+    "Sodium was excluded.",
+    "Chloride was included.",
+    "Sulfur values are treated as percent because the numeric scale is fractional despite the source header saying ppm.",
+    "Missing nutrient values are median-imputed with missingness indicators."
+  ]
+}
